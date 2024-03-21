@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Fira Sans", sans-serif;
+    overflow-x: hidden;
+}
+header{
+    display: grid;
+    grid-template-columns: auto auto 2fr;
+    grid-template-areas: "logo1 logo2 nav";
+    background-color: #EAB2FF;
+}
+#logo-mari{
+    height: 96px;
+    grid-area: logo1;
+}
+#logo-text{
+    height: 96px;
+    grid-area: logo2;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav-links{
+    margin-right: 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+main{
+    background-color: #802DD8;
+    height: 100vh;
+}
+footer{
+    background-color: #EAB2FF;
+}
