@@ -5,12 +5,13 @@
         box-sizing: border-box;
         scrollbar-width: none;
         scroll-behavior: smooth;
+        color: #863eae;
     }
     body{
         display: flex;
         flex-direction: column;
         height: 100vh;
-        font-family: "Fira Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         overflow-x: hidden;
     }
 
@@ -34,6 +35,7 @@
     .nav-links{
         margin-right: 24px;
         font-size: 1rem;
+        font-weight: 500;
         text-decoration: none;
     }
     .nav-links:hover{
@@ -76,7 +78,8 @@
         margin-right: 50px;
     }
     h1{
-        font-size: 5rem;
+        font-size: 3.8rem;
+        font-weight: 900;
         margin-bottom: 12px;
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
@@ -92,7 +95,6 @@
         font-size: 1rem;
         font-weight: 600;
         background: #EAB2FF;
-        color: #8446c7;
         box-shadow: 0 0 8px #802dd894;
     }
     #btn-catalogo:hover{
@@ -102,7 +104,6 @@
         box-shadow: 0 0 12px #7525cbcc;
         cursor: pointer;
         background: #ad8aff;
-        color: #6c3aa1;
     }
     #btn-catalogo:not(hover){
         transition: .2s ease;
@@ -115,7 +116,8 @@
         margin: 200px 0px 200px 0px;
     }
     #benefits-title{
-        font-size: 3rem;
+        font-size: 2.8rem;
+        font-weight: 900;
         margin-bottom: 12px;
     }
     #all-benefits{
