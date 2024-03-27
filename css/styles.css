@@ -1,99 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: "Fira Sans", sans-serif;
-    overflow-x: hidden;
-}
-header{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: "logo1 nav";
-    background-color: #ad8aff;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-}
-#logo-mari{
-    height: 72px;
-    grid-area: logo1;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-.nav-links{
-    margin-right: 24px;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-main{
-    height: 100vh;
-    padding: 32px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to bottom right, #8168ff,#c668ff);
-}
-#landing{
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-}
-#presentacion{
-    display: flex;
-    align-items: center;
-}
-#logo-text{
-    height: 280px;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
-    margin-left: 50px;
-}
-#presentacion-text{
-    display: flex;
-    flex-direction: column;
-    width: 560px;
-    margin-right: 50px;
-}
-h1{
-    font-size: 3rem;
-    margin-bottom: 12px;
-    color: #843eae;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-#presentacion-text p{
-    font-size: 1.1rem;
-}
-#btn-catalogo{
-    align-self: start; /*o center*/
-    padding: 15px;
-    border: none;
-    outline: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    background: #EAB2FF;
-    color: #8446c7;
-    box-shadow: 0 0 8px #802DD8;
-}
-#btn-catalogo:hover{
-    transition: .2s ease;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 12px #6624ad;
-    cursor: pointer;
-    background: #c668ff;
-    color: #6c3aa1;
-}
-#btn-catalogo:not(hover){
-    transition: .2s ease;
-}
-footer{
-    background-color: #ad8aff;
-    padding: 32px 0px 32px 12px;
-}
+/*Estilos estandar*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-family: "Fira Sans", sans-serif;
+        overflow-x: hidden;
+    }
+
+/*Estilos del HEADER*/
+    header{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "logo1 nav";
+        background-color: #ad8aff;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    }
+    #logo-mari{
+        height: 72px;
+        grid-area: logo1;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .nav-links{
+        margin-right: 24px;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+/*Estilos del MAIN*/
+    main{
+        height: auto;
+        padding: 32px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to bottom right, #8168ff,#c668ff);
+    }
+    
+    #landing{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    #presentacion{
+        display: flex;
+        align-items: center;
+    }
+    #logo-text{
+        height: 300px;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+
+    }
+    #presentacion-text{
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+        margin-right: 50px;
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 12px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    #presentacion-text p{
+        font-size: 1.1rem;
+    }
+    #btn-catalogo{
+        align-self: start; /*o center*/
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        background: #EAB2FF;
+        color: #8446c7;
+        box-shadow: 0 0 8px #802DD8;
+    }
+    #btn-catalogo:hover{
+        transition: .2s ease;
+        transform: scale(1.1);
+        box-shadow: 0px 0px 12px #6624ad;
+        cursor: pointer;
+        background: #c668ff;
+        color: #6c3aa1;
+    }
+    #btn-catalogo:not(hover){
+        transition: .2s ease;
+    }
+
+    #benefits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    #benefits-title{
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    #all-benefits{
+        display: flex;
+        flex-direction: row;
+    }
+    .benefits-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits-p{
+        width: 100px;
+        text-align: center;
+    }
+    .mari-benefit{
+        height: 200px;
+        margin: 50px 70px 20px;
+    }
+
+/*Estilos del footer*/
+    footer{
+        background-color: #ad8aff;
+        padding: 32px 0px 32px 12px;
+        bottom: 0;
+    }
