@@ -52,20 +52,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(to bottom right, #8168ff,#c668ff);
+        background: linear-gradient(to bottom right, #d4caff,#c2b5ff);
     }
     
     #landing{
         display: flex;
         flex-direction: column;
-        margin-top: 80px;
+        margin-top: 40px;
     }
     #presentacion{
         display: flex;
         align-items: center;
     }
     #logo-text{
-        height: 280px;
+        height: 350px;
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 
     }
@@ -76,12 +76,12 @@
         margin-right: 50px;
     }
     h1{
-        font-size: 3rem;
+        font-size: 5rem;
         margin-bottom: 12px;
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
     #presentacion-text p{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     #btn-catalogo{
         align-self: start; /*o center*/
@@ -93,14 +93,15 @@
         font-weight: 600;
         background: #EAB2FF;
         color: #8446c7;
-        box-shadow: 0 0 8px #802DD8;
+        box-shadow: 0 0 8px #802dd894;
     }
     #btn-catalogo:hover{
         transition: .2s ease;
         transform: scale(1.1);
-        box-shadow: 0px 0px 12px #6624ad;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 12px #7525cbcc;
         cursor: pointer;
-        background: #c668ff;
+        background: #ad8aff;
         color: #6c3aa1;
     }
     #btn-catalogo:not(hover){
@@ -114,7 +115,7 @@
         margin: 200px 0px 200px 0px;
     }
     #benefits-title{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 12px;
     }
     #all-benefits{
@@ -127,11 +128,12 @@
         align-items: center;
     }
     .benefits-p{
-        width: 100px;
+        width: 120px;
         text-align: center;
+        font-size: 1.1rem;
     }
     .mari-benefit{
-        height: 200px;
+        height: 250px;
         margin: 50px 70px 20px;
     }
 
