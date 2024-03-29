@@ -111,20 +111,30 @@
         }
     
     /*Carrousel Section*/
-        #carrousel{
-            margin-top: 80px;
+        #galeria{
+            margin-top: 70px;
+            display: flex;
+            width: 100vw;
+            height: 500px;
+            gap: 8px;
         }
-        .carrousel-img{
-            height: 220px;
+        .galeria-img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .6;
+            transition: .5s ease;
             border-radius: 16px;
-            margin: 0px 2px;
         }
-        .carrousel-img:hover{
-            transform: scale(1.2);
-            transition: .3s ease;
+        .galeria-img:hover{
+            width: 300px;
+            opacity: 1;
         }
-        .carrousel-img:not(hover){
-            transition: .3s ease;
+        .galeria-img:first-child{
+            margin-left: 8px;
+        }
+        .galeria-img:last-child{
+            margin-right: 8px;
         }
 
     /*Benefits Section*/
@@ -132,7 +142,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 200px 0px 200px 0px;
+            margin: 150px 0px 200px 0px;
         }
         #benefits-title{
             font-size: 2.8rem;
