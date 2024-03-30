@@ -54,7 +54,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(to bottom right, #d4caff,#c2b5ff);
+        background: linear-gradient(to bottom right, #d4cafff2,#c3b5fff2), url(/img/textura.jpg);
+        background-size: contain;
     }
     
     /*Landing Section*/
@@ -117,6 +118,7 @@
         #whatsapp-img{
             height: 52px;
             margin-left: 20px;
+            filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
         }
         #whatsapp-btn:hover{
             transform: scale(1.2);
