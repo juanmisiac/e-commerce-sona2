@@ -87,8 +87,11 @@
         #presentacion-text p{
             font-size: 1.3rem;
         }
+        #landing-btns{
+            display: flex;
+        }
         #btn-catalogo{
-            align-self: start; /*o center*/
+            align-self: center;
             padding: 15px;
             border: none;
             outline: none;
@@ -97,17 +100,27 @@
             font-weight: 600;
             background: #EAB2FF;
             box-shadow: 0 0 8px #802dd894;
+            transition: .2s ease;
         }
         #btn-catalogo:hover{
-            transition: .2s ease;
             transform: scale(1.1);
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
             box-shadow: 0 0 12px #7525cbcc;
             cursor: pointer;
             background: #ad8aff;
         }
-        #btn-catalogo:not(hover){
+        #whatsapp-btn{
+            background: transparent;
+            border: none;
             transition: .2s ease;
+        }
+        #whatsapp-img{
+            height: 52px;
+            margin-left: 20px;
+        }
+        #whatsapp-btn:hover{
+            transform: scale(1.2);
+            cursor: pointer;
         }
     
     /*Carrousel Section*/
@@ -129,6 +142,7 @@
         .galeria-img:hover{
             width: 300px;
             opacity: 1;
+            cursor: pointer;
         }
         .galeria-img:first-child{
             margin-left: 8px;
