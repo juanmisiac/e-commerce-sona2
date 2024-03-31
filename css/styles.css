@@ -23,7 +23,7 @@
         background-color: #ad8aff;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     }
-    #logo-mari{
+    .logo-mari{
         height: 64px;
         grid-area: logo1;
     }
@@ -186,7 +186,13 @@
 
 /*Estilos del footer*/
     footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: #ad8aff;
         padding: 32px 0px 32px 12px;
         bottom: 0;
+    }
+    #footer-credits{
+        margin-right: 24px;
     }
