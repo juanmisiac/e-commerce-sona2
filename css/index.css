@@ -179,9 +179,27 @@
             .galeria-img:hover{
                 opacity: 1;
                 width: 100%;
+                transform: scale(1.05);
             }
             .galeria-img:first-child, .galeria-img:last-child{
                 margin: 0;
             }
 
+        /*Benefits Mobile Section*/
+            #benefits{
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+            #benefits-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            #all-benefits{
+                display: flex;
+                flex-direction: column;
+            }
+            .mari-benefit{
+                height: 200px;
+                margin-top: 24px;
+            }
     }
