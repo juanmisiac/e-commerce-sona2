@@ -1,0 +1,127 @@
+/*En este archivo CSS se encuentran unicamente las propiedades que aplican sobre index.html*/
+
+/*Landing Section*/
+    #landing{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #presentacion{
+        display: flex;
+        align-items: center;
+    }
+    #logo-text{
+        height: 350px;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+
+    }
+    #presentacion-text{
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+        margin-right: 50px;
+    }
+    h1{
+        font-size: 3.8rem;
+        font-weight: 900;
+        margin-bottom: 12px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    #presentacion-text p{
+        font-size: 1.3rem;
+    }
+    #landing-btns{
+        display: flex;
+    }
+    #btn-catalogo{
+        align-self: center;
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        background: #EAB2FF;
+        box-shadow: 0 0 8px #802dd894;
+        transition: .2s ease;
+    }
+    #btn-catalogo:hover{
+        transform: scale(1.1);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 12px #7525cbcc;
+        cursor: pointer;
+        background: #ad8aff;
+    }
+    #whatsapp-btn{
+        background: transparent;
+        border: none;
+        transition: .2s ease;
+    }
+    #whatsapp-img{
+        height: 52px;
+        margin-left: 20px;
+        filter: drop-shadow(0 0 8px #802dd855);
+    }
+    #whatsapp-btn:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+/*Carrousel Section*/
+    #galeria{
+        margin-top: 70px;
+        display: flex;
+        width: 100vw;
+        height: 500px;
+        gap: 8px;
+    }
+    .galeria-img{
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .6;
+        transition: .5s ease;
+        border-radius: 16px;
+    }
+    .galeria-img:hover{
+        width: 300px;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .galeria-img:first-child{
+        margin-left: 12px;
+    }
+    .galeria-img:last-child{
+        margin-right: 12px;
+    }
+
+/*Benefits Section*/
+    #benefits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 150px 0px 200px 0px;
+    }
+    #benefits-title{
+        font-size: 2.8rem;
+        font-weight: 900;
+        margin-bottom: 12px;
+    }
+    #all-benefits{
+        display: flex;
+        flex-direction: row;
+    }
+    .benefits-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits-p{
+        width: 120px;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .mari-benefit{
+        height: 250px;
+        margin: 50px 70px 20px;
+    }
