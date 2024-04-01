@@ -84,3 +84,22 @@
     #footer-credits{
         margin-right: 24px;
     }
+
+/*Media Queries*/
+    @media (320px <= width <= 768px){
+        header .nav-links{
+            font-size: .8rem;
+            margin-right: 12px;
+        }
+        header .logo-mari{
+            height: 52px;
+            margin-left: 6px;
+        }
+
+        footer{
+            padding: 16px 0px 16px 0px;
+        }
+        #footer-credits{
+            font-size: .8rem;
+        }
+    }

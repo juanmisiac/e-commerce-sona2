@@ -6,7 +6,10 @@
         flex-direction: column;
         margin-top: 40px;
     }
-    #presentacion{
+    #landing-mobile{
+        display: none;
+    }
+    .presentacion{
         display: flex;
         align-items: center;
     }
@@ -30,10 +33,10 @@
     #presentacion-text p{
         font-size: 1.3rem;
     }
-    #landing-btns{
+    .landing-btns{
         display: flex;
     }
-    #btn-catalogo{
+    .btn-catalogo{
         align-self: center;
         padding: 15px;
         border: none;
@@ -45,24 +48,24 @@
         box-shadow: 0 0 8px #802dd894;
         transition: .2s ease;
     }
-    #btn-catalogo:hover{
+    .btn-catalogo:hover{
         transform: scale(1.1);
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
         box-shadow: 0 0 12px #7525cbcc;
         cursor: pointer;
         background: #ad8aff;
     }
-    #whatsapp-btn{
+    .whatsapp-btn{
         background: transparent;
         border: none;
         transition: .2s ease;
     }
-    #whatsapp-img{
+    .whatsapp-img{
         height: 52px;
         margin-left: 20px;
         filter: drop-shadow(0 0 8px #802dd855);
     }
-    #whatsapp-btn:hover{
+    .whatsapp-btn:hover{
         transform: scale(1.2);
         cursor: pointer;
     }
@@ -88,11 +91,8 @@
         opacity: 1;
         cursor: pointer;
     }
-    .galeria-img:first-child{
+    .galeria-img:first-child, .galeria-img:last-child{
         margin-left: 12px;
-    }
-    .galeria-img:last-child{
-        margin-right: 12px;
     }
 
 /*Benefits Section*/
@@ -124,4 +124,64 @@
     .mari-benefit{
         height: 250px;
         margin: 50px 70px 20px;
+    }
+
+/*Media Queries*/
+    @media (320px <= width <= 768px){
+        
+        /*Landing Mobile Section*/
+            #landing{
+                display: none;
+            }
+            #landing-mobile{
+                display: flex;
+                margin-top: 30px;
+            }
+            .presentacion{
+                display: flex;
+                flex-direction: column;
+            }
+            #presentacion-text{
+                width: 300px;
+            }
+            #logo-text{
+                height: 180px;
+            }
+            h1{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .landing-btns{
+                display: flex;
+                align-items: center;
+                margin-top: 24px;
+            }
+        
+        /*Galeria Mobile Section*/
+            #galeria{
+                margin-top: 100px;
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(3, auto);
+                gap: 8px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .galeria-img{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .galeria-img:hover{
+                opacity: 1;
+                width: 100%;
+            }
+            .galeria-img:first-child, .galeria-img:last-child{
+                margin: 0;
+            }
+
     }
