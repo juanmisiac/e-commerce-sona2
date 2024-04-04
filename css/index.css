@@ -14,7 +14,7 @@
         align-items: center;
     }
     #logo-text{
-        height: 350px;
+        height: 330px;
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 
     }
@@ -32,6 +32,10 @@
     }
     #presentacion-text p{
         font-size: 1.3rem;
+    }
+    #presentacion-p-mobile{
+        text-align: center;
+        font-size: 1.12rem;
     }
     .landing-btns{
         display: flex;
@@ -91,8 +95,11 @@
         opacity: 1;
         cursor: pointer;
     }
-    .galeria-img:first-child, .galeria-img:last-child{
+    .galeria-img:first-child{
         margin-left: 12px;
+    }
+    .galeria-img:last-child{
+        margin-right: 12px;
     }
 
 /*Benefits Section*/
@@ -181,7 +188,8 @@
                 width: 100%;
                 transform: scale(1.05);
             }
-            .galeria-img:first-child, .galeria-img:last-child{
+            .galeria-img:first-child,
+            .galeria-img:last-child{
                 margin: 0;
             }
 
